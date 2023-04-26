@@ -1,11 +1,8 @@
-
 import math
 
 def minimax (curDepth, nodeIndex,
 			maxTurn, scores,
 			targetDepth):
-
-	# base case : targetDepth reached
 	if (curDepth == targetDepth):
 		return scores[nodeIndex]
 	
@@ -20,7 +17,6 @@ def minimax (curDepth, nodeIndex,
 					True, scores, targetDepth),
 				minimax(curDepth + 1, nodeIndex * 2 + 1,
 					True, scores, targetDepth))
-	
 
 scores = [3, 5, 2, 9, 12, 5, 23, 23]
 
