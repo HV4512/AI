@@ -16,8 +16,10 @@ def unification(a,b):
 
         print("Unification Success")
         return result
-print("Enter Expression 1")
-a = input()
-print("Enter Expression 2")
-b = input()
+# print("Enter Expression 1")
+a = "p(x,y)"
+# a = input()
+# print("Enter Expression 2")
+b = "p(p,q)"
+# b = input()
 print(unification(a, b))

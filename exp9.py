@@ -17,7 +17,7 @@ Penguin = {
     "diet" : "Carnivore"
 }
 print("name: ", Lion['name'])
-print("habitat: ",Lion['habitat'])
+print("habitat: ",Penguin['habitat'])
 
 cat = {
     "name" : "cat",
