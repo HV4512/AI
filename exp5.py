@@ -2,11 +2,12 @@ colors = ['Red', 'Blue', 'Green', 'Yellow', 'Black']
 
 states = ['Andhra', 'Karnataka', 'TamilNadu', 'Kerala']
 
-neighbors = {}
-neighbors['Andhra'] = ['Karnataka', 'TamilNadu']
-neighbors['Karnataka'] = ['Andhra', 'TamilNadu', 'Kerala']
-neighbors['TamilNadu'] = ['Andhra', 'Karnataka', 'Kerala']
-neighbors['Kerala'] = ['Karnataka', 'TamilNadu']
+neighbors = {
+    'Andhra':['Karnataka','TamilNadu'],
+    'Karnataka':['Andhra', 'TamilNadu', 'Kerala'],
+    'TamilNadu': ['Andhra', 'Karnataka', 'Kerala'],
+    'Kerala' : ['Karnataka', 'TamilNadu']
+}
 
 colors_of_states = {}
 
