@@ -1,25 +1,27 @@
 def unification(a,b):
+    
     if len(a) != len(b):
         return "Unification Failed"
     elif(a[0] != b[0]):
         return "Unification Failed"
     else:
-        result = a[:2]
+        result = str(a[0])+"["+str(a[1])
     
     for l in range(2,len(a)-1):
-        result += a[l]
-        if(a[l]==";"):
+        
+        if(a[l]==";" or a[l]==","):
+            result+=", ("
             continue
+        result += a[l]
         result += "/"
         result += b[l]
         result += ")"
+    result+="]"
+    print("Unification Success")
+    return result
 
-        print("Unification Success")
-        return result
-# print("Enter Expression 1")
 a = "p(x,y)"
-# a = input()
-# print("Enter Expression 2")
+
 b = "p(p,q)"
-# b = input()
+
 print(unification(a, b))
